@@ -152,7 +152,7 @@ elif(18.5<=bmi and bmi<=24.49):
 elif(24.5<=bmi):
     print("you have extra weight")
 ```
-```script
+```javascript
 let bmi,weight,height;
 alert("welcome to our programm in this programm we will calcuate your bmi.");
 weight = +prompt("enter your weight(kg) please:");
@@ -180,7 +180,7 @@ if(bmi<18.4){
 }
 ```
 
-```index
+```html
 <html>
  <head>
     <meta charset="UTF-8">  
