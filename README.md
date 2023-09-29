@@ -1,5 +1,6 @@
 # bmi
 <h2 align="left">Hi 👋! this is bmi calculator program which write with differend languages such as python c++ c and javascropt.</h2>
+
 ```c
 // bmi.c
 #include <stdio.h>
@@ -27,6 +28,7 @@ void bmi(double w,double h){
     }
 }
 ```
+        
 ```cpp
 #include <iostream>
 #include <string>
@@ -127,6 +129,7 @@ using namespace std;
      return 0;
  }
  ```
+
  ```python
 class MyInfo:
     weight = int()
@@ -176,6 +179,7 @@ if(bmi<18.4){
     console.log("error");
 }
 ```
+
 ```index
 <html>
  <head>
