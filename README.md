@@ -1,33 +1,14 @@
-# bmi
-<h2 align="left">Hi 👋! this is bmi calculator program which write with differend languages such as python c++ c and javascropt.</h2>
+![baner](https://github.com/Ghosts6/Local-website/blob/main/img/Baner.png)
 
-```c
-// bmi.c
-#include <stdio.h>
-void bmi(double w,double h);
-int main(){
-    double weight,stature;
-    printf("welcome to bmi calculator program : \n enter your weight and stature bay kg and m:");
-    scanf("%lf %lf",&weight,&stature);
-    bmi(weight,stature);
-    return 0;
-}
-void bmi(double w,double h){
-    double bmi,n1,n2;
-    n1 = h /100; n2 = n1 * n1;
-    bmi = w / n2;
-    printf("your bmi equal with : %lf \n",bmi);
-    if(bmi<=18.5){
-        printf("bmi status : under weight\n");
-    }else if(18.5<bmi||bmi<=24.9){
-        printf("bmi status : normal weight\n");
-    }else if(25<=bmi||bmi<=29.9){
-        printf("bmi status : overweight\n");
-    }else if(30<=bmi){
-        printf("bmi status : obesity\n");
-    }
-}
-```
+# ⚕️bmi
+
+Hi 👋! this is bmi calculator program which write with differend languages such as python c++ c and javascropt.
+
+
+# 🔍code sample:
+
+here we have c++ code, which use oop to handle data and if we want to talk about feature of this program we can 
+point to advise that it give to us based on our bmi near calcute bmi.
         
 ```cpp
 #include <iostream>
@@ -130,66 +111,4 @@ using namespace std;
  }
  ```
 
- ```python
-class MyInfo:
-    weight = int()
-    stature = int()
-    name = ""
-    lname = ""
-    pass
-MyInfo.name = input("enter your name :")
-MyInfo.lname = input("enter your lastname:")
-MyInfo.weight = input("enter your weight(kg):")  # type: ignore
-MyInfo.stature = input("enter your stature (m):")  # type: ignore
-MyInfo.stature = int(MyInfo.stature) ;MyInfo.weight = int (MyInfo.weight)
-A = MyInfo.stature / 100 ; B = A * A
-bmi =MyInfo.weight / B
-print("mr/mrs",MyInfo.name,"your bmi equal with :",bmi)
-if(bmi<=18.49):
-    print("you are under normal weight")
-elif(18.5<=bmi and bmi<=24.49):
-    print("you have normal weight")
-elif(24.5<=bmi):
-    print("you have extra weight")
-```
-```javascript
-let bmi,weight,height;
-alert("welcome to our programm in this programm we will calcuate your bmi.");
-weight = +prompt("enter your weight(kg) please:");
-height = +prompt("enter your height (m) please:");
-height /= 100;
-height **=2;
-bmi = weight / height;
-alert(bmi);
-console.log("bmi ="+bmi);
-if(bmi<18.4){
-    alert("under weight")
-    console.log("under weight")
-}else if(bmi>18.4 && bmi<24.9){
-    alert("normal weight")
-    console.log("normal weight")
-}else if(bmi>24.9 && bmi<39.9){
-    alert("over weight")
-    console.log("over weight")
-}else if(bmi>=39.9){
-    alert("obese")
-    console.log("obese")   
-}else{
-    alert("wrong input !");
-    console.log("error");
-}
-```
-
-```html
-<html>
- <head>
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Document</title> 
- </head>
- <body>
-    <script src ="../bmi/js/script.js">
-    </script>
- </body>
-</html>
-```
+ # 🎥video:
