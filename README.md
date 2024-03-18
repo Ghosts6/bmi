@@ -112,3 +112,5 @@ using namespace std;
  ```
 
  # 🎥video:
+
+[bmi.webm](https://github.com/Ghosts6/bmi/assets/95994481/03af7a81-a127-4318-b534-da4ffd1613bb)
