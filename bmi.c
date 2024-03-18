@@ -3,7 +3,7 @@
 void bmi(double w,double h);
 int main(){
     double weight,stature;
-    printf("welcome to bmi calculator program : \n enter your weight and stature bay kg and m:");
+    printf("welcome to bmi calculator program : \n enter your weight and stature by kg and m:");
     scanf("%lf %lf",&weight,&stature);
     bmi(weight,stature);
     return 0;
