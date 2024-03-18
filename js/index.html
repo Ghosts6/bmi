@@ -1,11 +1,42 @@
-<html>
+<!DOCTYPE>
+<html lang="en">
  <head>
     <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Document</title> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Bmi</title> 
  </head>
  <body>
-    <script src ="../bmi/js/script.js">
+   <div class="bmi">
+      <div id="particles-js"></div>
+      <u>Welcome to our bmi program</u>
+      <div class=" container">
+         <h1>Bmi calculator</h1>
+         <div class="input-container">
+            <label for="wight">wight</label>
+            <i class="fa-solid fa-weight-scale"></i>
+            <input type="text" id="wight" placeholder="enter your wight:">
+         </div>
+         <div class="input-container">
+            <label for="Height">Height:</label>
+            <i class="fa-solid fa-person"></i>
+            <input type="text" id="height" placeholder="enter your height">
+         </div>
+         <div class="button-container">
+            <div class="submit-button" onclick="toggleSubmit()">Submit</div>
+         </div> 
+      </div>
+      <div class="result">
+         <h1>your bmi summary</h1>
+         <div class="bmi-result"></div>
+         <div class="button-container">
+            <div class="home-button" onclick="toggleHome()">try again?</div>
+         </div> 
+      </div>
+   </div>
+   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <script src ="script.js">
     </script>
  </body>
 </html>
