@@ -1,4 +1,3 @@
-//bmi with c++
 #include <iostream>
 #include <string>
 #include <stdio.h>
@@ -8,62 +7,68 @@ using namespace std;
      float wight;
      float stature;
      double bmi;
-     double wighetcost;
+     double wight_cost;
  };
  double a,b;
  int main(){
      info obj;
-     string firstname;
-     string lastname;
-     string fullname = firstname + " " + lastname;
+     string first_name;
+     string last_name;
+     string fullname = first_name + " " + last_name;
      string choice;
-     char voite;
+     char vote;
      cout <<"\t\t\t"<<"welcome to bmi progtam"<<"\n\n"<<"please fill your infomation"<<endl;
      cout<<"enter your name:"<<endl;
-     cin >>firstname;
+     cin >>first_name;
      cout<<"enter your last name:"<<endl;
-     cin>>lastname;
+     cin>>last_name;
      cout<<"\t\t\t"<<"welcome"<<fullname<<endl;
      cout<<"enter your wighet bay kg first than your stature bay metre:"<<"\n";
      cin>>obj.wight>>obj.stature;
      a=obj.stature/100;
      b=a*a;
      obj.bmi=obj.wight/b;
-     obj.wighetcost=obj.bmi - 18.5;
-     cout <<"\n\n\n"<<"your bmi equal with:"<<obj.bmi<<"\n"<<"you need to cost:"<<obj.wighetcost<<" to have normal wighet"<<endl;
+     obj.wight_cost=obj.bmi - 18.5;
+     cout <<"\n\n\n"<<"your bmi equal with:"<<obj.bmi<<"\n"<<endl;
+     if(obj.wight_cost < 5){
+        cout<<"your wight ok and you dont need to lose wight"<<endl;
+     }else if (obj.wight_cost > 5){
+        cout<<"you need to cost:"<<obj.wight_cost<<" to have normal wight"<<endl;
+     }
+     
      if(obj.bmi<=18.49){
-         cout<<"under wighet"<<endl;
-         voite='a';
+         cout<<"under wight"<<endl;
+         vote='a';
      }  
      
     else if(18.5<=obj.bmi && obj.bmi<=24.49){
-         cout<<"you have normal wighet"<<endl;
-         voite='b';
+         cout<<"you have normal wight"<<endl;
+         vote='b';
      }
      
      else if(24.5<=obj.bmi && obj.bmi<=29.9){
-         cout<<"you have extera wighet"<<endl;
-    voite='c';
+         cout<<"you have extra wight"<<endl;
+    vote='c';
      }
      
   else if(30<=obj.bmi && obj.bmi<=34.49){
          cout<<"coutFirst-degree obesity"<<endl;
-         voite='d';
+         vote='d';
      }
   else if(34.5<=obj.bmi && obj.bmi<=40){
          cout<<"second degree obesity"<<endl;
-         voite='e';
+         vote='e';
      }
       
      else{
          cout<<"wrong number or info"<<endl;
      }
      jump:
-     cout<<"\n\n"<<"thank for your time wealso have some advice about wighet"<<"\n"<<"do you wane see them ?(yes/no)"<<endl;
+     cout<<"\n\n"<<"thank for your time we also have some advice about wight"<<"\n"<<"do you wane see them ?(yes/no)"<<endl;
      cin>> choice;
      if(choice == "yes" || choice == "Yes"){
-         cout<<"therse some advice for you bay your bmi :"<<endl;
-         switch (voite){
+         cout<<"theres some advice for you bay your bmi :"<<endl;
+         switch (vote){
              case 'a':
               cout<<"Eat more frequently. When you're underweight, you may feel full faster. Eat five to six smaller meals during the day rather than two or three large meals.Choose nutrient-rich foods. As part of an overall healthy diet, choose whole-grain breads, pastas and cereals; fruits and vegetables; dairy products; lean protein sources; and nuts and seeds"<<endl;
               break;
@@ -97,3 +102,4 @@ using namespace std;
      
      return 0;
  }
+
