@@ -7,7 +7,7 @@ using namespace std;
      float wight;
      float stature;
      double bmi;
-     double wight_cost;
+     double weight_cost;
  };
  double a,b;
  int main(){
@@ -17,37 +17,37 @@ using namespace std;
      string fullname = first_name + " " + last_name;
      string choice;
      char vote;
-     cout <<"\t\t\t"<<"welcome to bmi progtam"<<"\n\n"<<"please fill your infomation"<<endl;
+     cout <<"\t\t\t"<<"welcome to bmi program"<<"\n\n"<<"please fill your infomation"<<endl;
      cout<<"enter your name:"<<endl;
      cin >>first_name;
      cout<<"enter your last name:"<<endl;
      cin>>last_name;
      cout<<"\t\t\t"<<"welcome"<<fullname<<endl;
-     cout<<"enter your wighet bay kg first than your stature bay metre:"<<"\n";
+     cout<<"enter your weight bay kg first than your stature bay metre:"<<"\n";
      cin>>obj.wight>>obj.stature;
      a=obj.stature/100;
      b=a*a;
      obj.bmi=obj.wight/b;
-     obj.wight_cost=obj.bmi - 18.5;
+     obj.weight_cost=obj.bmi - 18.5;
      cout <<"\n\n\n"<<"your bmi equal with:"<<obj.bmi<<"\n"<<endl;
-     if(obj.wight_cost < 5){
+     if(obj.weight_cost < 5){
         cout<<"your wight ok and you dont need to lose wight"<<endl;
-     }else if (obj.wight_cost > 5){
-        cout<<"you need to cost:"<<obj.wight_cost<<" to have normal wight"<<endl;
+     }else if (obj.weight_cost > 5){
+        cout<<"you need to cost:"<<obj.weight_cost<<" to have normal wight"<<endl;
      }
      
      if(obj.bmi<=18.49){
-         cout<<"under wight"<<endl;
+         cout<<"under weight"<<endl;
          vote='a';
      }  
      
     else if(18.5<=obj.bmi && obj.bmi<=24.49){
-         cout<<"you have normal wight"<<endl;
+         cout<<"you have normal weight"<<endl;
          vote='b';
      }
      
      else if(24.5<=obj.bmi && obj.bmi<=29.9){
-         cout<<"you have extra wight"<<endl;
+         cout<<"you have extra weight"<<endl;
     vote='c';
      }
      
@@ -64,7 +64,7 @@ using namespace std;
          cout<<"wrong number or info"<<endl;
      }
      jump:
-     cout<<"\n\n"<<"thank for your time we also have some advice about wight"<<"\n"<<"do you wane see them ?(yes/no)"<<endl;
+     cout<<"\n\n"<<"thank for your time we also have some advice about weight"<<"\n"<<"do you wane see them ?(yes/no)"<<endl;
      cin>> choice;
      if(choice == "yes" || choice == "Yes"){
          cout<<"theres some advice for you bay your bmi :"<<endl;
